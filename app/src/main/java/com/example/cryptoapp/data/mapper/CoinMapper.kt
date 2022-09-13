@@ -43,7 +43,7 @@ class CoinMapper {
         }?.joinToString(",") ?: ""
     }
 
-    fun mapDbModelToEntity(dbModel: CoinInfoDbModel): CoinInfo = CoinInfo (
+    fun mapDbModelToEntity(dbModel: CoinInfoDbModel): CoinInfo = CoinInfo(
         fromSymbol = dbModel.fromSymbol,
         toSymbol = dbModel.toSymbol,
         price = dbModel.price,
@@ -51,5 +51,5 @@ class CoinMapper {
         lowDay = dbModel.lowDay,
         lastMarket = dbModel.lastMarket,
         imageUrl = dbModel.imageUrl
-            )
+    )
 }
