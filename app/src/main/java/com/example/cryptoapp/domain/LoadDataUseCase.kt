@@ -5,5 +5,4 @@ class LoadDataUseCase(
 ) {
 
     suspend operator fun invoke() = repository.loadData()
-
 }
