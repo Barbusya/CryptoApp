@@ -8,10 +8,11 @@ import dagger.BindsInstance
 import dagger.Component
 
 @ApplicationScope
-@Component (
+@Component(
     modules = [
         DataModule::class,
-        ViewModelModule::class
+        ViewModelModule::class,
+        WorkerModule::class
     ]
 )
 interface ApplicationComponent {
